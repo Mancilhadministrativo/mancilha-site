@@ -473,73 +473,72 @@
 
         /* RESPONSIVO */
         @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                gap: 15px;
-                padding: 15px 20px;
-            }
+         header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+}
 
-            nav {
-                flex-wrap: wrap;
-                gap: 15px;
-                justify-content: center;
-            }
+header .logo span {
+    font-size: 18px;
+}
 
-            nav a {
-                font-size: 12px;
-            }
+header .logo img {
+    height: 35px;
+}
 
-            section {
-                padding: 50px 20px;
-            }
+nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
 
-            .hero {
-                padding: 80px 20px;
-            }
-
-            .hero h1 {
-                font-size: 32px;
-            }
-
-            .hero p {
-                font-size: 16px;
-            }
-
-            h2 {
-                font-size: 28px;
-            }
-
-            .whatsapp-button {
-                width: 50px;
-                height: 50px;
-                font-size: 24px;
-            }
+nav a {
+    font-size: 12px;
+}
         }
 
-        @media (max-width: 480px) {
-            header {
-                padding: 10px 15px;
-            }
+       @media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        padding: 8px 10px;
+        gap: 8px;
+    }
 
-            nav {
-                gap: 10px;
-            }
+    header .logo span {
+        font-size: 14px;
+    }
 
-            .hero h1 {
-                font-size: 24px;
-            }
+    header .logo img {
+        height: 30px;
+    }
 
-            .services-grid,
-            .personas,
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
 
-            section {
-                padding: 40px 15px;
-            }
-        }
-    </style>
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .services-grid,
+    .personas,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+}
+</style>      
 </head>
 <body>
     <!-- HEADER FIXO -->
@@ -555,8 +554,6 @@
             <a href="#como-funciona">Como Funciona</a>
             <a href="#para-quem">Para Quem é</a>
             <a href="#contato">Contato</a>
-            <a href="https://wa.me/5512974052608?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20preciso%20regularizar%20minha%20situa%C3%A7%C3%A3o.%20Pode%20me%20orientar%3F" class="whatsapp-header">
-                <i class="fab fa-whatsapp"></i> Falar no WhatsApp
             </a>
         </nav>
     </header>
@@ -576,28 +573,7 @@
             </a>
         </section>
 
-        <!-- 2. SOBRE -->
-        <section id="sobre" class="about">
-            <h2>Sobre Artur Mancilha</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Olá! Sou Artur Mancilha, e estou aqui para simplificar sua vida quando o assunto é organização administrativo e gestão financeira.
-                    </p>
-                    <p>
-                        Trabalho com pessoas físicas, microempreendedores e proprietários de MEI que não entendem (ou têm medo) da burocracia. Meu objetivo é transformar documentos complicados em soluções simples e práticas.
-                    </p>
-                    <p>
-                        Você não precisa entender de leis e regulamentos. Você só precisa de alguém de confiança que entenda e que explique tudo de forma clara e direta. Esse sou eu.
-                    </p>
-                    <p>
-                        <strong>Atendimento direto, linguagem simples, resultado garantido.</strong>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. SERVIÇOS -->
+        <!-- 2. SERVIÇOS -->
         <section id="servicos">
             <h2>Nossos Serviços</h2>
             <p style="text-align: center; color: var(--texto-cinza); margin-bottom: 40px;">
@@ -678,6 +654,27 @@
                     <p>
                         <strong>Para quem é:</strong> Qualquer pessoa que quer organizar suas finanças<br><br>
                         <strong>Benefícios:</strong> Orientação prática para tomar melhores decisões
+                    </p>
+                </div>
+            </div>
+        </section>
+
+          <!-- 3. SOBRE -->
+        <section id="sobre" class="about">
+            <h2>Sobre Artur Mancilha</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Olá! Sou Artur Mancilha, e estou aqui para simplificar sua vida quando o assunto é organização administrativo e gestão financeira.
+                    </p>
+                    <p>
+                        Trabalho com pessoas físicas, microempreendedores e proprietários de MEI que não entendem (ou têm medo) da burocracia. Meu objetivo é transformar documentos complicados em soluções simples e práticas.
+                    </p>
+                    <p>
+                        Você não precisa entender de leis e regulamentos. Você só precisa de alguém de confiança que entenda e que explique tudo de forma clara e direta. Esse sou eu.
+                    </p>
+                    <p>
+                        <strong>Atendimento direto, linguagem simples, resultado garantido.</strong>
                     </p>
                 </div>
             </div>
